@@ -3,8 +3,8 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.example
-canonical: http://example.org
+id: fhir.cancer-guideline.example
+canonical: http://example.org/cancer-guideline/fhir
 name: OncologyGuidelineExample
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
@@ -24,7 +24,11 @@ publisher:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-# dependencies:
+dependencies:
+  hl7.fhir.us.core: 6.1.0
+  hl7.fhir.us.mcode: 3.0.0
+  hl7.fhir.uv.cpg: 2.0.0-ballot
+  hl7.fhir.uv.crmi: 1.0.0-snapshot
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -62,7 +66,15 @@ publisher:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-# parameters:
+parameters:
+  path-binary: ./input/cql
+  apply:
+  - date
+  - version
+  - status
+  - publisher
+  - jurisdiction
+  
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #

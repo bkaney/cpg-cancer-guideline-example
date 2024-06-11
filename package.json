@@ -1,0 +1,9 @@
+{
+  "name": "fhir.example",
+  "version": "0.1.0",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@reason-framework/cpg-test-support": "file:../reason-framework/packages/cpg-test-support",
+    "dotenv": "^16.4.5"
+  }
+}

@@ -1,7 +1,10 @@
 .DS_Store
 Thumbs.db
+/input/tests
+/input/vocabulary
 /fsh-generated
 /input-cache
 /output
 /temp
 /template
+/node_modules
