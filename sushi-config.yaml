@@ -69,12 +69,14 @@ dependencies:
 parameters:
   path-binary: ./input/cql
   apply:
-  - date
-  - version
-  - status
-  - publisher
-  - jurisdiction
-  
+    - date
+    - version
+    - status
+    - publisher
+    - jurisdiction
+  special-url: 
+    - http://fhir.org/guides/cqf/common/Library/FHIRHelpers
+
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
