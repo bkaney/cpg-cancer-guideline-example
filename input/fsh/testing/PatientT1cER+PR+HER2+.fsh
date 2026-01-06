@@ -41,7 +41,7 @@ Instance: Patient2ObservationERNegative
 InstanceOf: ERStatus
 Usage: #inline
 * status = #final
-* category[Laboratory] = $observation-category#laboratory
+* category[us-core] = $observation-category#laboratory
 * code = $LOINC#85337-4 "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
 * subject = Reference(Patient2)
 * performer = Reference(PractitionerShared)
@@ -51,7 +51,7 @@ Instance: Patient2ObservationPRNegative
 InstanceOf: PRStatus
 Usage: #inline
 * status = #final
-* category[Laboratory] = $observation-category#laboratory
+* category[us-core] = $observation-category#laboratory
 * code = $LOINC#85339-0 "Progesterone receptor Ag [Presence] in Breast cancer specimen by Immune stain"
 * subject = Reference(Patient2)
 * performer = Reference(PractitionerShared)
@@ -61,7 +61,7 @@ Instance: Patient2ObservationHER2Negative
 InstanceOf: HER2Status
 Usage: #inline
 * status = #final
-* category[Laboratory] = $observation-category#laboratory
+* category[us-core] = $observation-category#laboratory
 * code = $LOINC#48676-1 "HER2 [Interpretation] in Tissue"
 * subject = Reference(Patient2)
 * performer = Reference(PractitionerShared)
